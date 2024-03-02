@@ -42,25 +42,31 @@ $(document).ready(function () {
 });  
 
 $(document).ready(function () {
-    // Show the modal after a few seconds  
+    // Preload and delay opening of the video modal  
     setTimeout(function () {
+        // Trigger the modal to show  
         $('#videoModal').modal('show');
-    }, 2000); // Adjust the time (in milliseconds) as needed  
 
-    // Get the video element  
-    var introVideo = document.getElementById("introVideo");
+        // Get the video element  
+        var introVideo = document.getElementById("introVideo");
+
+        // Play the video when the modal is shown  
+        $('#videoModal').on('shown.bs.modal', function (e) {
+            introVideo.play();
+        });
+
+    }, 5000); // 5 second delay  
 
     // When the video has ended, close the modal  
+    var introVideo = document.getElementById("introVideo");
     introVideo.onended = function () {
         $('#videoModal').modal('hide');
     };
 
-    // When the modal is hidden, you might want to do something (optional)  
+    // When the modal is hidden, optionally reset the video to the beginning  
     $('#videoModal').on('hidden.bs.modal', function (e) {
         introVideo.pause();
-        // Optionally, reset the video to the beginning when the modal is closed  
-        introVideo.currentTime = 0; 
-        
+        introVideo.currentTime = 0;
     });
 });  
 

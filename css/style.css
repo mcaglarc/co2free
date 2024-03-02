@@ -58,6 +58,7 @@ html {
 }
 
 @media (max-width: 768px) {
+   
     .navbar {
         padding-top: 15px;
         /* Adjust for smaller screens */
