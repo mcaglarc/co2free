@@ -1,0 +1,214 @@
+body,
+html {
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+    padding-top: 0px;
+    /* Adjusted for the navbar */
+    background-image: url('../images/bg.png');
+    /* Path to your image */
+    background-size: cover;
+    /* Cover the whole page */
+    background-position: center;
+    /* Center the background image */   
+    background-attachment: fixed;
+    /* Fixed background */
+    height: 100%;
+    /* Minimum height to 100% */
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1030;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    text-align: center;
+    padding: 5rem 0;
+    /* Uniform padding for all sections */
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    /* Space between sections */
+}
+
+.section-image {
+    width: 100%;
+    height: auto;
+    max-height: 85vh;
+    object-fit: contain;
+    margin: 0px 0;
+    /* Adds margin around images */
+}
+
+.footer {
+    background-color: #61605a;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding-top: 15px;
+        /* Adjust for smaller screens */
+    }
+    .navbar-logo {
+            height: 30px;
+            /* Smaller logo for mobile devices */
+        }
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+/* Initial state of the underline */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    bottom: -5px;
+    left: 50%;
+    transition: all 0.3s;
+}
+/* State of the underline for active link or on hover */
+.nav-link:hover::after,
+.nav-link-active::after {
+    width: 100%;
+    left: 0;
+}
+
+
+.custom-learn-more {
+    background-color: #77c99a !important;
+    /* Change the background color */
+    border-color: #77c99a !important;
+    /* Change the border color to match */
+}
+
+.custom-learn-more:hover,
+.custom-learn-more:focus {
+    background-color: #69b089 !important;
+    /* Slightly darker for hover effect */
+    border-color: #69b089 !important;
+}
+.navbar-logo {
+    height: 60px;
+    /* Adjust based on your navbar's height */
+    width: auto;
+    /* Maintain aspect ratio */
+}
+/* Width and color of the scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Adjust the width of the scrollbar */
+}
+
+/* Handle of the scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: #ffcc00;
+    /* Yellow color */
+    border-radius: 6px;
+    /* Rounded corners for the handle */
+    border: 3px solid #ffcc00;
+    /* Optional: same color border for a solid look */
+}
+
+/* Track of the scrollbar */
+::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    /* Light grey track */
+    border-radius: 6px;
+    /* Rounded corners for the track */
+}
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Custom styles for the full-screen modal */
+.modal-fullscreen {
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Dark background with opacity */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    /* Prevent scrolling */
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.modal-header,
+.modal-footer {
+    border: none;
+}
+
+/* Style for the close button */
+.close {
+    color: #fff;
+    opacity: 1;
+}
+
+/* Style adjustments for the video */
+video {
+    width: 100%;
+    /* Full width */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-height: 100vh;
+    /* Ensure it doesn't exceed the viewport height */
+}
+.modal-dialog {
+    max-width: 75%;
+    /* Adjust based on your preference for a larger view */
+}
+
+.modal-content {
+    background-color: transparent;
+    /* Keeping your styling */
+    border: none;
+    /* Keeping your styling */
+}
+
+
+.nav-btn {
+    position: fixed;
+    bottom: 20px;
+    z-index: 1000;
+    background-color: #69b089;
+    /* Updated background color */
+    color: white;
+    /* Ensures icon is white */
+    border: none;
+    padding: 10px 15px;
+    /* Adjust padding as needed */
+}
+
+#btnUp {
+    left: 20px;
+}
+
+#btnDown {
+    right: 20px;
+}

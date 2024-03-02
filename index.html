@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Power Choices, Greener Footprints</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <!-- Video Modal -->
+    <div class="modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <video id="introVideo" width="100%" height="auto" controls autoplay muted disablePictureInPicture>
+                        <source src="images/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-hero" href="#hero">Top</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-manifesto" href="#manifesto">Manifesto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-Project" href="#Project">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-how-it-works" href="#how-it-works">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-support-us" href="#support-us">Become A Boss</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="section shadow">
+
+        <img src="images/1.png" alt="Hero Image" class="section-image img-fluid">
+        <div class="container text-center">
+            <a class="btn btn-primary btn-lg custom-learn-more" href="#manifesto" role="button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="manifesto" class="section shadow">
+        <div class="container text-center">
+            <h2>Our Manifesto</h2>
+            <!-- Insert your manifesto content here -->
+        </div>
+        <img src="images/5.png" alt="Our Manifesto Image" class="section-image img-fluid">
+    </section>
+
+    <section id="Project" class="section shadow">
+        <div class="container text-center">
+            <h2>About The Project</h2>
+
+        </div>
+        <img src="images/2.png" alt="About Image" class="section-image img-fluid">
+    </section>
+
+    <section id="how-it-works" class="section shadow">
+        <div class="container text-center">
+            <h2>How It Works</h2>
+
+        </div>
+        <img src="images/3.png" alt="How It Works Image" class="section-image img-fluid">
+    </section>
+
+<section id="support-us" class="section shadow"
+    style="background-image: url('images/4.png'); background-size: cover; background-position: center;">
+    <div class="container" style="background-color:rgba(105, 176, 137, 0.5); padding: 20px; border-radius: 10px;">
+        <h2 class="text-center" style="color: #000;">Become a Boss for the Project</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card" style="background-color:rgba(105, 176, 137, 0.9);">
+                    <div class="card-body">
+                        <h5 class="card-title">Join as a Sponsor</h5>
+                        <p class="card-text">Join the fight against climate change by becoming a sponsor of CO2Free, the innovative app that helps users minimize
+                        their carbon footprint by suggesting the best times to use electricity. This partnership not only aligns with your
+                        sustainability goals, making you a leader in eco-friendly practices, but also offers unique collaboration opportunities
+                        with industry peers and significant brand exposure. Don't miss the chance to make a real difference and elevate your
+                        brand. Contact us now to lead the way to a greener future!</p>
+                        <div class="text-center">
+                            <!-- Using font-awesome for email icon -->
+                            <a href="mailto:info@raven1-0.com" class="btn btn-primary">
+                                <i class="fa fa-envelope"></i> info@raven1-0.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <footer class="footer py-4" style="background-color: #000000;">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <!-- Project Logo -->
+                <div class="col">
+                    <img src="images/logo.png" alt="Project Logo" class="img-fluid">
+                </div>
+                <!-- Middle Section for Text and Links -->
+                <div class="col-6">
+                    <p style="color: #ffffff;">Smart Power Choices,
+                    Greener Footprints.</p>
+                    <a href="https://www.linkedin.com/company/raven1-0" class="btn btn-light btn-sm" role="button"
+                        aria-pressed="true" target="_blank">
+                        <i class="bi bi-linkedin"></i> 
+                    </a>
+                    <a href="https://raven1-0.com/" class="btn btn-light btn-sm" role="button" aria-pressed="true" target="_blank">
+                        <i class="bi bi-globe"></i> 
+                    </a>
+                    <!-- Email Link -->
+                    <a href="mailto:info@raven1-0.com" class="btn btn-light btn-sm" role="button" aria-pressed="true" target="_blank">
+                        <i class="bi bi-envelope-fill"></i> 
+                    </a>
+                </div>
+                <!-- Company Logo with Link -->
+                <div class="col">
+                    <a href="https://raven1-0.com/" target="_blank">
+                        <img src="images/logo2.png" alt="Company Logo" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="row mt-3">
+                <div class="col">
+                    <small style="color: #ffffff;">&copy; 2024 by Raven1-0. All Rights Reserved.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Placeholder for Dynamic Navigation Buttons -->
+    <div id="dynamicNavButtons"></div>
+
+
+    <!-- Bootstrap JS bundle (includes Popper) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
