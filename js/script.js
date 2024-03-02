@@ -55,7 +55,7 @@ $(document).ready(function () {
             introVideo.play();
         });
 
-    }, 5000); // 5 second delay  
+    }, 10000); // 10 second delay  
 
     // When the video has ended, close the modal  
     var introVideo = document.getElementById("introVideo");
